@@ -1,4 +1,7 @@
 package by.ankudovich.music.apis.subscriptionTypes;
 
-public class SubscriptionTypeUpdateRequest {
+import lombok.Data;
+
+@Data
+public class SubscriptionTypeUpdateRequest extends SubscriptionTypeCreateRequest {
 }

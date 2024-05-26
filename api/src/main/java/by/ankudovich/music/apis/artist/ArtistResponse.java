@@ -1,23 +1,17 @@
 package by.ankudovich.music.apis.artist;
 
-//@Data
+import by.ankudovich.music.apis.album.AlbumResponse;
+import by.ankudovich.music.apis.track.TrackResponse;
+import lombok.Data;
+
+import java.util.Collection;
+
+@Data
 public class ArtistResponse {
     private Long artistId;
     private String artistName;
+    private String description;
+    private Collection<AlbumResponse> albums;
+    private Collection <TrackResponse> songs;
 
-    public Long getArtistId() {
-        return artistId;
-    }
-
-    public void setArtistId(Long artistId) {
-        this.artistId = artistId;
-    }
-
-    public String getArtistName() {
-        return artistName;
-    }
-
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
-    }
 }

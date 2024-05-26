@@ -12,13 +12,17 @@ import java.util.Date;
 public class Track {
     @Id
     @GeneratedValue
-    private Long track_id;
+    private Long trackId;
+
     @ManyToOne
-    @JoinColumn(name="album_id", nullable=false)
+    @JoinColumn(name="albumId", nullable=false)
     private Album album;
 
     @ManyToOne
-    @JoinColumn(name="artist_id", nullable=false)
+    private Genres genre;
+
+    @ManyToOne
+    @JoinColumn(name="artisId", nullable=false)
     private Artist artist;
 
     private String trackName;

@@ -1,4 +1,8 @@
 package by.ankudovich.music.apis.track;
 
-public class TrackUpdateRequest {
+import lombok.Data;
+
+@Data
+public class TrackUpdateRequest extends TrackCreateRequest {
+    private Long id;
 }

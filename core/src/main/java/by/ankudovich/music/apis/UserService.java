@@ -30,7 +30,7 @@ public class UserService {
     }
     @Transactional
     public void update(long id, User updatedUser){
-        updatedUser.setUser_id(id);
+        updatedUser.setUserId(id);
         userRepository.save(updatedUser);
     }
     @Transactional

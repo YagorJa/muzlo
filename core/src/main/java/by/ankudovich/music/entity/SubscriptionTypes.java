@@ -3,6 +3,8 @@ package by.ankudovich.music.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Collection;
+
 @Entity
 @Data
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -10,9 +12,11 @@ import lombok.Data;
 public class SubscriptionTypes {
     @Id
     @GeneratedValue
-    private Long subscr_Id;
-
-    private String typeName;
+    private Long subscrTypeId;
     private String description;
+    private Double price;
+    private String typeName;
+    @OneToMany(mappedBy = "subscriptionType")
+    private Collection<Subscriptions> subscriptions;
 
 }

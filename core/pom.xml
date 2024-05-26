@@ -39,6 +39,7 @@
             <groupId>by.ankudovich.music</groupId>
             <artifactId>api</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
 
