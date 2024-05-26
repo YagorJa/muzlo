@@ -1,4 +1,4 @@
-package by.ankudovich.music.service;
+package by.ankudovich.music.apis.artist;
 
 import lombok.Data;
 

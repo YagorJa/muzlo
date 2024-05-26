@@ -1,6 +1,4 @@
-package by.ankudovich.music.service;
-
-import lombok.Data;
+package by.ankudovich.music.apis.artist;
 
 //@Data
 public class ArtistResponse {

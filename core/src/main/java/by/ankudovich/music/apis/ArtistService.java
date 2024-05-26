@@ -1,15 +1,16 @@
-package by.ankudovich.music.service;
+package by.ankudovich.music.apis;
 
-import by.ankudovich.music.entity.Artist;
+import by.ankudovich.music.apis.artist.ArtistUpdateRequest;
 import by.ankudovich.music.mapper.ArtistMapper;
 import by.ankudovich.music.repository.ArtistRepository;
 
+import by.ankudovich.music.apis.artist.ArtistCreateRequest;
+import by.ankudovich.music.apis.artist.ArtistResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
-import java.util.List;
 
 @Service
 @Transactional
@@ -50,7 +51,7 @@ public class ArtistService implements ArtistInterService {
     }
 
     @Override
-    public ArtistResponse updateArtist(ArtistUpdateReqeust updateRequest) {
+    public ArtistResponse updateArtist(ArtistUpdateRequest updateRequest) {
         return null;
     }
 }

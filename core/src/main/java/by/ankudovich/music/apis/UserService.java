@@ -1,4 +1,4 @@
-package by.ankudovich.music.service;
+package by.ankudovich.music.apis;
 
 import by.ankudovich.music.entity.User;
 import by.ankudovich.music.repository.UserRepository;

@@ -1,9 +1,9 @@
 package by.ankudovich.music.controller;
 
 import by.ankudovich.music.aspect.Logg;
-import by.ankudovich.music.service.ArtistCreateRequest;
-import by.ankudovich.music.service.ArtistResponse;
-import by.ankudovich.music.service.ArtistService;
+import by.ankudovich.music.apis.artist.ArtistCreateRequest;
+import by.ankudovich.music.apis.artist.ArtistResponse;
+import by.ankudovich.music.apis.ArtistService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
