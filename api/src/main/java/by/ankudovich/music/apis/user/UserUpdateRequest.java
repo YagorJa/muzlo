@@ -1,4 +1,8 @@
 package by.ankudovich.music.apis.user;
 
-public class UserUpdateRequest {
+import lombok.Data;
+
+@Data
+public class UserUpdateRequest extends UserCreateRequest {
+    private Long id;
 }
