@@ -1,4 +1,4 @@
-package by.ankudovich.music.service;
+package by.ankudovich.music.apis;
 
 import by.ankudovich.music.entity.User;
 import by.ankudovich.music.repository.UserRepository;
@@ -30,7 +30,7 @@ public class UserService {
     }
     @Transactional
     public void update(long id, User updatedUser){
-        updatedUser.setUser_id(id);
+        updatedUser.setUserId(id);
         userRepository.save(updatedUser);
     }
     @Transactional

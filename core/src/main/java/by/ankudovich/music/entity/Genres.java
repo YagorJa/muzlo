@@ -3,6 +3,8 @@ package by.ankudovich.music.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Collection;
+
 @Entity
 @Data
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -10,7 +12,11 @@ import lombok.Data;
 public class Genres {
     @Id
     @GeneratedValue
-    private Long genre_id;
-    private String genre_name;
-    private String genre_description;
+    private Long genreId;
+    private String genreName;
+    private String genreDescription;
+    @OneToMany(mappedBy = "genre")
+    private Collection<Album> albums;
+    @OneToMany(mappedBy = "genre")
+    private Collection<Track> songs;
 }

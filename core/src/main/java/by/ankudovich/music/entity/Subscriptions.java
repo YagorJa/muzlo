@@ -12,14 +12,12 @@ import java.time.LocalDate;
 public class Subscriptions {
     @Id
     @GeneratedValue
-    private Long subscr_id;
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    private Long subscrId;
+    @OneToOne
     private User user;
+    private LocalDate startDate;
+    private LocalDate endDate;
     @ManyToOne
-    @JoinColumn(name="subscription_type_id", nullable=false)
     private SubscriptionTypes subscriptionType;
-    private LocalDate start_date;
-    private LocalDate end_date;
 
 }

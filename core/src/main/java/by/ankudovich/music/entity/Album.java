@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.Collection;
 
 @Entity
 @Data
@@ -12,13 +13,17 @@ import java.time.LocalDate;
 public class Album {
     @Id
     @GeneratedValue
-    private Long album_id;
+    private Long albumId;
+    private String albumName;
     @ManyToOne
-    @JoinColumn(name="genre_id", nullable=false)
+    @JoinColumn(name="genreId", nullable=false)
     private Genres genre;
     @ManyToOne
-    @JoinColumn(name="artist_id", nullable=false)
+    @JoinColumn(name="artistId", nullable=false)
     private Artist artist;
-    private String albumName;
+
+    @OneToMany(mappedBy = "album", cascade = CascadeType.ALL)
+    private Collection<Track> songs;
+
     private LocalDate  releaseDate;
 }
