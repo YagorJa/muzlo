@@ -1,4 +1,4 @@
-package by.ankudovich.music.service.album;
+package by.ankudovich.music.service.genre;
 
 import by.ankudovich.music.apis.genres.GenreCreateRequest;
 import by.ankudovich.music.apis.genres.GenreResponse;

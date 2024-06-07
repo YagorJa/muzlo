@@ -8,6 +8,6 @@ import java.util.Collection;
 public class GenreCreateRequest {
     private String genreName;
     private String genreDescription;
-    private Collection <Long> albumsID;
-    private Collection<Long> songsID;
+//    private Collection <Long> albumsID;
+//    private Collection<Long> songsID;
 }

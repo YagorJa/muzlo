@@ -4,7 +4,6 @@ import by.ankudovich.music.apis.subscriptionTypes.SubscriptionTypeResponse;
 import by.ankudovich.music.apis.user.UserResponse;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 
 import java.time.LocalDate;
 
@@ -16,5 +15,5 @@ public class SubscriptionResponse {
     private LocalDate startDate;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private LocalDate endDate;
-    private SubscriptionTypeResponse subscrTypeId;
+    private SubscriptionTypeResponse type;
 }

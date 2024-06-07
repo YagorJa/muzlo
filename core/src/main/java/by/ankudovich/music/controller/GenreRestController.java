@@ -3,7 +3,7 @@ package by.ankudovich.music.controller;
 import by.ankudovich.music.apis.genres.GenreCreateRequest;
 import by.ankudovich.music.apis.genres.GenreResponse;
 import by.ankudovich.music.exception.UniversalException;
-import by.ankudovich.music.service.album.GenreService;
+import by.ankudovich.music.service.genre.GenreService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;

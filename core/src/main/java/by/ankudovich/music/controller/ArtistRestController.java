@@ -1,10 +1,9 @@
 package by.ankudovich.music.controller;
 
-import by.ankudovich.music.aspect.Logg;
 import by.ankudovich.music.apis.artist.ArtistCreateRequest;
 import by.ankudovich.music.apis.artist.ArtistResponse;
 import by.ankudovich.music.exception.UniversalException;
-import by.ankudovich.music.service.album.ArtistService;
+import by.ankudovich.music.service.artist.ArtistService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package by.ankudovich.music.service.album;
+package by.ankudovich.music.service.artist;
 
 import by.ankudovich.music.apis.artist.ArtistCreateRequest;
 import by.ankudovich.music.apis.artist.ArtistResponse;

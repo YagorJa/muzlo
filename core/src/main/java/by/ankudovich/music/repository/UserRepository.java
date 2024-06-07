@@ -13,5 +13,5 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User,Long> {
     @Query("select u from User u where u.username =:username")
     User findByLogin(@Param("username") String username);
-    List<User> findAllByNameAndSurname(String name, String surname);
+//    List<User> findAllByNameAndSurname(String name, String surname);
 }
