@@ -19,4 +19,43 @@ public class SubscriptionTypes {
     @OneToMany(mappedBy = "subscriptionType")
     private Collection<Subscriptions> subscriptions;
 
+    public Long getSubscrTypeId() {
+        return subscrTypeId;
+    }
+
+    public void setSubscrTypeId(Long subscrTypeId) {
+        this.subscrTypeId = subscrTypeId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    public Collection<Subscriptions> getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(Collection<Subscriptions> subscriptions) {
+        this.subscriptions = subscriptions;
+    }
 }

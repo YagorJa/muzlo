@@ -3,7 +3,7 @@ package by.ankudovich.music.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -26,6 +26,53 @@ public class Track {
     private Artist artist;
 
     private String trackName;
-    private Date releaseDate;
+    private LocalDate releaseDate;
 
+    public Long getTrackId() {
+        return trackId;
+    }
+
+    public void setTrackId(Long trackId) {
+        this.trackId = trackId;
+    }
+
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
+    }
+
+    public Genres getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genres genre) {
+        this.genre = genre;
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    public String getTrackName() {
+        return trackName;
+    }
+
+    public void setTrackName(String trackName) {
+        this.trackName = trackName;
+    }
+
+    public LocalDate getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(LocalDate releaseDate) {
+        this.releaseDate = releaseDate;
+    }
 }

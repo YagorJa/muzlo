@@ -16,7 +16,7 @@ public class ArtistRestController {
     private final ArtistService artistService;
 
     @Transactional
-    @PostMapping
+    @PostMapping("/add")
     public ArtistResponse add(@RequestBody ArtistCreateRequest request){
         return artistService.add(request);
     }
